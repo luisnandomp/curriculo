@@ -1,33 +1,22 @@
 import { StyleSheet, Text, View, Button } from 'react-native';
 
+import Botao from '../componentes/Botao';
 
 const Objetivo = ({ navigation }) => {
     return (
         <View style={styles.conteinerr}>
-            <Text style={styles.textoo}>Aqui vou contar minhas Experiencias! </Text>
-            <Text style={styles.texto}>Aqui vou contar minhas Experiencias!  {'\n'}
+            <Text style={styles.textoo}>Aqui vou contar meus objetivos! </Text>
+            <Text style={styles.texto}>Meu objetivo é ser rico, sem a necessidade de trabalhar  {'\n'}
  
             {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'}
             
             {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'}
             </Text>
-            <Button  
-                title="Home"
-                onPress={ () => navigation.navigate('Home') }
-            />
-            <Button 
-                title="Sobre"
-                onPress={ () => navigation.navigate('Sobre') }
-            />
-            <Button 
-                title="Dados"
-                onPress={ () => navigation.navigate('Dados') }
-            />
-            <Button 
-                title="Experiencia"
-                onPress={ () => navigation.navigate('Experiencia') }
-            />
 
+            <Botao titulo="Home" acao={ () => navigation.navigate('Home') } />
+            <Botao titulo="Sobre" acao={ () => navigation.navigate('Sobre') } />
+            <Botao titulo="Experiencia" acao={ () => navigation.navigate('Experiencia') } />
+            <Botao titulo="Dados" acao={ () => navigation.navigate('Dados') } />
         </View>
     )};
 

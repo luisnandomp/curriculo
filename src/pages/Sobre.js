@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Button } from 'react-native';
 
+import Botao from '../componentes/Botao';
 
 const Sobre = ({ navigation }) => {
     return (
@@ -12,22 +13,11 @@ const Sobre = ({ navigation }) => {
             KONVIX, uma "filial" da INTERSOLID, empresa muito renomada! estou atuando como tester (QA) ultimamente, mas tenho planos de me tornar progamador em breve!
             {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} 
             </Text> 
-            <Button  
-                title="Home "
-                onPress={ () => navigation.navigate('Home') }
-            />
-            <Button 
-                title="Experiencia"
-                onPress={ () => navigation.navigate('Experiencia') }
-            />
-            <Button 
-                title="Dados"
-                onPress={ () => navigation.navigate('Dados') }
-            />
-            <Button 
-                title="Objetivo"
-                onPress={ () => navigation.navigate('Objetivo') }
-            />
+
+            <Botao titulo="Home" acao={ () => navigation.navigate('Home') } />
+            <Botao titulo="Experiencia" acao={ () => navigation.navigate('Experiencia') } />
+            <Botao titulo="Dados" acao={ () => navigation.navigate('Dados') } />
+            <Botao titulo="Objetivo" acao={ () => navigation.navigate('Objetivo') } />
         </View>
     )};
 

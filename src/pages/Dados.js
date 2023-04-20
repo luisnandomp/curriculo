@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Button } from 'react-native';
 
+import Botao from '../componentes/Botao';
 
 const Dados = ({ navigation }) => {
     return (
@@ -13,22 +14,11 @@ const Dados = ({ navigation }) => {
 
             {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} 
             </Text> 
-            <Button  
-                title="Home "
-                onPress={ () => navigation.navigate('Home') }
-            />
-            <Button 
-                title="Experiencia"
-                onPress={ () => navigation.navigate('Experiencia') }
-            />
-            <Button 
-                title="Sobre"
-                onPress={ () => navigation.navigate('Sobre') }
-            />
-            <Button 
-                title="Objetivo"
-                onPress={ () => navigation.navigate('Objetivo') }
-            />
+
+            <Botao titulo="Home" acao={ () => navigation.navigate('Home') } />
+            <Botao titulo="Sobre" acao={ () => navigation.navigate('Sobre') } />
+            <Botao titulo="Experiencia" acao={ () => navigation.navigate('Experiencia') } />
+            <Botao titulo="Objetivo" acao={ () => navigation.navigate('Objetivo') } />
         </View>
     )};
 
