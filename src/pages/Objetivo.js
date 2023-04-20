@@ -5,10 +5,9 @@ import Botao from '../componentes/Botao';
 const Objetivo = ({ navigation }) => {
     return (
         <View style={styles.conteinerr}>
-            <Text style={styles.textoo}>Aqui vou contar meus objetivos! </Text>
+            <Text style={styles.textoo}>Aqui vou contar meus objetivos! {'\n'}  {'\n'} </Text>
             <Text style={styles.texto}>Meu objetivo é ser rico, sem a necessidade de trabalhar  {'\n'}
  
-            {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'}
             
             {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'}
             </Text>

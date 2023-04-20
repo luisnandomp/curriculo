@@ -8,7 +8,7 @@ const Home = ({ navigation }) => {
             <Image  style={styles.imagem}
                 source={require('../imagens/foto.png')}
             />
-            <Text style={styles.texto}>Sejam Muito Bem Vindos ao meu Curriculo :D {'\n'}  {'\n'} {'\n'} {'\n'}</Text> 
+            <Text style={styles.texto}>Sejam Muito Bem Vindos ao meu Curriculo :D {'\n'}  {'\n'}</Text> 
             <Text style={styles.frase}>Aqui vou deixar umas opções de botões para que possam me conhecer um pouco melhor através deles! </Text>
             
             <Botao titulo="Sobre" acao={ () => navigation.navigate('Sobre') } />

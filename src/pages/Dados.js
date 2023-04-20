@@ -5,7 +5,7 @@ import Botao from '../componentes/Botao';
 const Dados = ({ navigation }) => {
     return (
         <View style={styles.conteinerr}>
-            <Text style={styles.textoo}>Aqui estão meus dados!</Text>
+            <Text style={styles.textoo}>Aqui estão meus dados! {'\n'}  {'\n'}</Text>
             <Text style={styles.texto}>Nome:Luis Fernando {'\n'}
             Idade:quase 20 {'\n'}
             E-mail:luisnando.marques2107@gmail.com {'\n'}

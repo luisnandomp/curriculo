@@ -5,10 +5,9 @@ import Botao from '../componentes/Botao';
 const Experiencia = ({ navigation }) => {
     return (
         <View style={styles.conteinerr}>
-            <Text style={styles.textoo}>Aqui vou contar minhas Experiencias! </Text>
+            <Text style={styles.textoo}>Aqui vou contar minhas Experiencias!{'\n'}  {'\n'} </Text>
             <Text style={styles.texto}>Aqui vou contar minhas Experiencias!  {'\n'}
  
-            {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'}
             
             {'\n'} {'\n'} {'\n'} {'\n'} {'\n'} {'\n'}
             </Text>
